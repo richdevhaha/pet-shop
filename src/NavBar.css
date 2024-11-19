@@ -1,0 +1,85 @@
+nav {
+    display: flex;
+    padding: 0.5rem;
+    margin-bottom: 0.2rem;
+    align-items: center;
+
+    margin: 0;
+    padding: 10px;
+    background-color: #F68B20;
+    float: center;
+
+    
+    
+    
+    
+  }
+
+  
+  nav a {
+    padding: 0.5rem;
+    color: red;
+    text-decoration: none;
+    font-weight: 800;
+    font-size: 2rem;
+    color: aliceblue;
+   
+    
+    
+  }
+  
+  a {
+    text-decoration: none;
+   
+   
+  }
+  
+  .menuitem a:hover,
+  .dropdown:hover .dropbtn {
+    
+    background-color: #E9F1F7;
+     color: #F68B20;
+  }
+  
+
+/* #navbar { 
+    position: absolute;
+    right: 12px;
+    top: -10px;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+    padding-top: 1rem;
+    
+
+    
+  }*/
+  
+  .navlink {
+    padding: 1rem;
+    margin-bottom: 1rem;
+  
+  }
+  
+  .navlink li {
+    display: inline-block;
+ 
+ 
+  }
+  
+  .navlink a {
+    color: whitesmoke;
+    padding-left: 2rem;
+    font-size: 2rem;
+    text-decoration: none;
+    cursor: pointer;
+    margin-bottom: 1rem;
+  
+  }
+
+/* Media query for responsiveness */
+@media (max-width: 300px) {
+  nav ul li {
+      float: none;
+  }
+}
+

@@ -1,0 +1,242 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+.container {
+  margin: 0 auto;
+
+  max-width: 80%;
+  padding: 0rem;
+}
+
+
+
+.navbar {
+  display: flex;
+  justify-content: space-between; /* Space between links and button */
+  align-items: center; /* Center items vertically */
+  padding: 10px 20px; /* Add some padding */
+  background-color: #f8f9fa; /* Background color for the navbar */
+  border-bottom: 1px solid #ccc; /* Optional border */
+}
+
+.menuitem {
+  display: flex; /* Use flex to align items */
+  align-items: center; /* Center items vertically */
+  flex-grow: 1; /* Allow this div to grow and take available space */
+}
+
+.menuitem a {
+  margin-right: 15px; /* Space between links */
+  text-decoration: none; /* Remove underline from links */
+}
+
+.logout-button {
+ 
+}
+
+.logout-button:hover {
+  background-color: #c82333; /* Darker shade on hover */
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+
+:root {
+  --primary-color: rgba(13, 110, 139, 0.75);
+  --overlay-color: rgba(24, 39, 51, 0.85);
+  --menu-speed: 0.75s;
+}
+
+html {
+  font-size: 10px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  /* background-color: #8648A3; */
+  background-color: #264653;
+  color: whitesmoke;
+  font-family: sans-serif;
+  text-align: center;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-size: 20px;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 90%;
+  padding: 5px;
+}
+
+/* .wrapper {
+  display:flex;
+  max-width:70%;
+  justify-content: flex-end;
+} */
+.title {
+  font-family: "Happy Monkey", cursive, "Helvetica Neue", sans-serif;
+  color: #ffeb11;
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 2rem;
+  font-size: 2rem;
+}
+
+p {
+  font-family: sans-serif;
+  text-align: center;
+  color: whitesmoke;
+  font-size: 1.5rem;
+  text-align: left;
+}
+
+
+#startShow {
+  font-size: 1.5rem;
+  line-height: 1;
+  position: relative;
+  animation: heading;
+  animation-duration: 3s;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease;
+}
+
+@keyframes heading {
+  0% {
+    left: -1000px;
+  }
+  25% {
+    left: 300px;
+  }
+  50% {
+    left: -300px;
+  }
+  100% {
+    left: 0px;
+  }
+}
+
+.btn {
+  display: inline-block;
+  border: none;
+  background: var(--primary-color);
+  color: #fff;
+  padding: 0.75rem 1.5rem;
+  margin-top: 1rem;
+  transition: opacity 0.5s ease-in-out;
+  text-decoration: none;
+  margin-right: 1rem;
+}
+
+.btn:hover {
+  opacity: 0.8;
+  color: #ffeb11;
+}
+
+.showlist {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 1rem;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.image {
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+  margin: 0.5rem;
+}
+
+@media (max-width: 992px) {
+  .showlist {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .title {
+    font-family: "Helvetica Neue", sans-serif;
+    font-size: 0.7rem;
+    text-align: center;
+    margin-bottom: 1.5rem;
+  }
+  .showlist {
+    grid-template-columns: 1fr;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+  }
+
+  .image {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    margin: 0.3rem;
+  }
+
+  .btn {
+    display: inline-block;
+    border: none;
+    background: var(--primary-color);
+    color: #fff;
+    padding: 0.5rem 0.5rem;
+    transition: opacity 0.5s ease-in-out;
+    text-decoration: none;
+    margin-right: 0.5rem;
+    margin-bottom: 1rem;
+  }
+
+  .btn-refresh {
+    opacity: 1;
+  }
+
+
+}
